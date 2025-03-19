@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+
     <header>
         <div class="logo-container">
             <a href="#"><img src="img/aziz.png" alt="Logo del sito" class="logo-img"></a>
@@ -53,6 +55,19 @@
     <footer>
         <p>&copy; 2024 Z3R0. Tutti i diritti riservati.</p>
     </footer>
+
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'it',
+                includedLanguages: 'en,it',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script src="scripts.js"></script>
 </body>
 </html>
